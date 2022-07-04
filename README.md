@@ -34,19 +34,24 @@ Golang 代理池系统，自动抓取代理，检测代理
 #### 配置文件
 
 ```yaml
+cache:
+  key: "proxies"                #Redis队列的KEY
+  redis: 192.168.0.224:6379      #Redis连接地址
+
 check:
   time: "*/10 * * * * ?"        #校验周期10秒
   http: http://www.166.com      #http效验地址
   https: https://www.baidu.com  #https效验地址
   lowest: 30                    #代理池伐值，少于30个
   timeout: 3                    #代理检测超时
-redis:
-  key: "proxies"                #Redis队列的KEY
-  addr: 192.168.0.224:6379      #Redis连接地址
+
+logger:
+  dir: ./logs                   #Log存储路径
+  file: "%Y%m%d.log"              #Log文件名
+
 
 server:
-  addr: 0.0.0.0:5010            #WEB服务监听地址:端口
-  logs: ./logs                  #Log存储路径
+  addr: 0.0.0.0:5010            #WEB服务监听地址:端口      
 ```
 
   
