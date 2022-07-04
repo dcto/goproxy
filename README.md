@@ -1,7 +1,10 @@
 # Goproxy
 <li><strong>Git</strong>: <a href="https://gitee.com/sdox/goproxy">https://gitee.com/sdox/goproxy</a>
+
 <li><strong>Issues</strong>: <a href="https://gitee.com/sdox/goproxy/issues">https://gitee.com/sdox/goproxy/issues</a>
+
 <li><strong>License</strong>: MIT
+
 <li><strong>IRC</strong>: #Goproxy on freenode
 
 ___
@@ -12,6 +15,7 @@ Golang 代理池系统，自动抓取代理，检测代理
 
 <br />
 启动：
+
 ```go run main.go```
 
 <br />
@@ -22,10 +26,12 @@ Golang 代理池系统，自动抓取代理，检测代理
 <br />
 
 >监听：0.0.0.0:5010
+
 >访问：http://127.0.0.1:5010
 
 
 #### 配置文件
+
 ```yaml
 check:
   time: "*/10 * * * * ?"        #校验周期10秒
