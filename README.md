@@ -1,11 +1,12 @@
 # Goproxy
-<li><strong>Git</strong>: <a href="https://gitee.com/sdox/goproxy">https://gitee.com/sdox/goproxy</a></li>
 
-<li><strong>Issues</strong>: <a href="https://gitee.com/sdox/goproxy/issues">https://gitee.com/sdox/goproxy/issues</a></li>
+* <strong>Git</strong>: <a href="https://gitee.com/sdox/goproxy">https://gitee.com/sdox/goproxy</a>
 
-<li><strong>License</strong>: MIT</li>
+* <strong>Issues</strong>: <a href="https://gitee.com/sdox/goproxy/issues">https://gitee.com/sdox/goproxy/issues</a>
 
-<li><strong>IRC</strong>: #Goproxy on freenode</li>
+* <strong>License</strong>: MIT
+
+* <strong>IRC</strong>: #Goproxy on freenode
 
 ___
 
