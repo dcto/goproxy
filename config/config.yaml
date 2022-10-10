@@ -1,6 +1,6 @@
 cache:
   key: "proxies"                #Redis队列的KEY
-  redis: 192.168.0.224:6379      #Redis连接地址
+  redis: 127.0.0.1:6379      #Redis连接地址
 
 check:
   time: "*/10 * * * * ?"        #校验周期10秒

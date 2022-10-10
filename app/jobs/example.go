@@ -8,7 +8,7 @@ import (
 //初始化任务
 func init(){
 	//5秒种获取一次IP地址
-	Cron("*/5 * * * * ?", Example)
+	//Cron("*/5 * * * * ?", Example)
 }
 
 
