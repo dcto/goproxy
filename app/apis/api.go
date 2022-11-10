@@ -65,3 +65,23 @@ func Raw(c *gin.Context) {
 	d, _ := cache.Redis.HGetAll(context.Background(), config.GetString("cache.key")).Result()
 	c.JSON(200, d)
 }
+
+/**
+ * 删除数据
+ * @author dc
+ * @version 20221012
+ */
+func Del(c *gin.Context) {
+
+    items := c.Request.URL.Query()
+	result := make(map[string]string)
+    for k, _ := range items {
+		if err := cache.Redis.HDel(context.Background(), config.GetString("cache.key"), k).Err(); err != nil {
+			log.Println(err.Error())
+			result[k] = err.Error()
+		}else{
+			result[k] = "removed"
+		}
+    }
+	c.JSON(200, result)
+}

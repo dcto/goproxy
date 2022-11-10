@@ -32,6 +32,7 @@ func main() {
 	router.GET("/pop", apis.Pop)
 	router.GET("/all", apis.All)
 	router.GET("/raw", apis.Raw)
+	router.DELETE("/del", apis.Del)
 	
 
 
